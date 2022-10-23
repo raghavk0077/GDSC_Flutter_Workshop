@@ -1,0 +1,16 @@
+run = "dart Flutter-Simple-Calculator-main/flutter_calculator/lib/main.dart"
+
+[packager]
+language = "dart-pub"
+
+[packager.features]
+packageSearch = true
+
+[languages.dart]
+pattern = "**/*.dart"
+
+[languages.dart.languageServer]
+start = ["dart", "language-server"]
+
+[nix]
+channel = "stable-21_11"
